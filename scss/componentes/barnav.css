@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* estilos de la barra de menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* estilos de los link de la barra de menú */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* estilo del fondo de la barra de menus */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}/*# sourceMappingURL=barnav.css.map */
