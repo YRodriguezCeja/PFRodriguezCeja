@@ -36,44 +36,27 @@
 	
 
 <!-- inicia galeria con Grids -->
-<div class="galeriacont">
-	<div class="item itemcont1">
-		<section>
-			<article>
-				<h2>Contactanos</h2>
-					<!-- <label for="">Nombre:</label> -->
-					<input type="text" placeholder="escribe tu nombre" required><br>
-					<br>
-					<!-- <label for="">Apellido:</label> -->
-					<input type="text" placeholder="escribe tu apellido" required><br>
-					<br>
-					<!-- <label for="">Correo:</label> -->
-					<input type="email" placeholder="contacto@xxxxx.com" name="email"><br>
-					<br>
-					<!-- <label for="">Telefono:</label> -->
-					<input type="number" placeholder="1234-555-555" name="email"><br>
-					<br>
-					</label>
-					<!-- <label for=""> mensaje:</label><br> -->
-						<textarea name="mensaje" id="" cols="30" rows="5" placeholder="Escribe tu mensaje"></textarea>
-					<br>
-					<p>Ya eres cliente nuestro?</p>
-					<select name="text" id="opcion"> 
-						<option value="si">Si</option>
-						<option value="no">No</option>
-					</select>
-					<div>Te gustaria recibir nuestras noticias y promociones?
+	<h2>Contactanos</h2>
+<div class="contacto">
+	<div class="boxc boxc1">
+		<form method="post" name="miformulario" netlify>
+				<input type="text" placeholder="Nombre" required>
+				<input type="text" placeholder="Apellido" required>
+				<input type="email" placeholder="Correo" name="email">
+				<input type="number" placeholder="Telefono" name="email">
+				<textarea name="mensaje" id="" cols="30" rows="5" placeholder="Escribe tu mensaje"></textarea>
+				<p>Ya eres cliente nuestro?</p>
+				<select name="text" id="opcion"> 
+					<option value="si">Si</option>
+					<option value="no">No</option>
+				</select>
+				<div>Te gustaria recibir nuestras noticias y promociones?
 					<input type="checkbox" name="acepta" value="1"></div><br>
-					<input type="submit" value="Enviar">
-					<input type="reset" value="Borrar">
-			</article>
-		</section>
-
-
+					<input type="submit" name="Enviar" id="enviar">
+		</form>
 	</div>
-	<div class="item itemcont2">Adiestramiento Intermedio</div>
-	<div class="item itemcont3">Adiestramiento Especializado</div>
-	<div class="item itemcont4">Estetica Canina</div>
+	<div class="boxc boxc2">sucursal</div>
+	<!-- <div class="boxc boxc3">texto</div> -->
 </div>
 
 <!-- inicia footer -->
