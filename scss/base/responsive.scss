@@ -1,12 +1,5 @@
 
-/* Generando la resposividad de la pagina de inicio  con media quierys*/
-@media screen and (max-width: 992px) {
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
-}
+
 
 @media screen and (max-width: 40px) {
     .topnav a {
