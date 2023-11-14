@@ -1,17 +1,78 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;1,100;1,200&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+// font-family: 'Bebas Neue', sans-serif; header
+// font-family: 'Fira Sans', sans-serif; cuerpo
+// font-family: 'Lora', serif; nav y footer
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
 }
 
-// link de carpeta componentes
-@import '../scss/componentes/header.scss';
-@import '../scss/componentes/barnav.scss';
-@import '../scss/componentes/footer.scss';
+/* formato general del texto  y fuentes*/
+body {
+    // font-family: 'Fira Sans', sans-serif;
+    padding: 10px;
+    background-image:  linear-gradient(rgba(0, 128, 0, 0.342),rgba(255, 255, 0, 0.37)),url(../multimedia/evento3.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-// links de carpeta base
-@import '../scss/base/fuentes.scss';
-@import '../scss/base/colors.scss';
+
+
+/* formato del header ---------------------------------------------------------------------------------*/
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgba(102, 113, 111, 0.543);
+}
+
+// formato texto
+.header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    color: #fafafa;
+    text-shadow: 0 0 5px #000;
+}
+
+.header p {
+    font-size: 20px;
+    color: #f2f2f2;
+    text-shadow: 0 0 5px #000;
+}
+
+h2{
+    text-align: center;
+    background-color: #53757336;
+    color: #fff;
+    text-shadow: 0 0 0px #000;
+    padding: 15px;
+}
+
+
+// formato nav bar
+.topnav {
+    overflow: hidden;
+    background-color: #a35a3530;
+}
+
+/* estilos de los link de la barra de menú */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* estilo del fondo de la barra de menus */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 
 
@@ -39,7 +100,7 @@
 .caja:hover{ 
     transform: scale(0.9);
 }
-/* enlaces de cada imagen de galeria de servicios */
+/* enlaces de cada imagen */
 .caja1{
     background-image: url(multimedia/evento1.jpg);
 }
@@ -65,23 +126,28 @@
 
 
 
-// inicia formato servicios
+// inicia formato servicios---------------------------------------------------------------------------------------------------------------
 
 
 
 // /* formato de la galeria de servicios usando disply grids */
 .galeria{
     height: auto;
-    background-color: #537573;
+    background-color: #53757344;
     display: grid; 
     grid-template-columns: 1fr;
     grid-row: repeat(8, 200px);
     padding: 10px;
     grid-gap: 10px
 }
+// body{
+//     background-position: center;
+//     background-size: cover;
+// }
 // /* formato general de cada seccion item */
 .item{
     border: 3px solid rgba(90, 89, 89, 0.74);
+    background-color:#53757381 ;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -90,34 +156,32 @@
     font-size: 30px;
     transition: all 0.9s;
 }
-.item:hover{ 
-    transform: scale(0.9);
-}
+
 /* enlaces de cada imagen de galeria de servicios */
-.item1{
-    background-image: url(multimedia/evento1.jpg);
-}
-.item2{
-    background-image: url(multimedia/evento2.jpg);
-}
-.item3{
-    background-image: url(multimedia/evento3.jpg);
-}
-.item4{
-    background-image: url(multimedia/evento4.png);
-}
-.item5{
-    background-image: url(multimedia/evento5.jpg);
-}
-.item6{
-    background-image: url(multimedia/evento6.jpg);
-}
-.item7{
-    background-image: url(multimedia/evento7.webp);
-}
-.item8{
-    background-image: url(multimedia/evento8.jpg);
-}
+// .item1{
+//     background-color:#53757381 ;
+// }
+// .item2{
+//     background-color:#53757381 ;
+// }
+// .item3{
+//     background-color:#53757381 ;
+// }
+// .item4{
+//     background-color:#53757381 ;
+// }
+// .item5{
+//     background-color:#53757381 ;
+// }
+// .item6{
+//     background-color:#53757381 ;
+// }
+// .item7{
+//     background-color:#53757381 ;
+// }
+// .item8{
+//     background-color:#53757381 ;
+// }
 @media screen and (max-width: 40px) {
     .topnav a {
         float: none;
@@ -138,12 +202,12 @@
     }
     .item1{
         grid-column:1/3 ;
-        grid-row: 1/2 ;
+        grid-row: 1/3 ;
     }
-    .item2{
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
+    // .item2{
+    //     grid-column: 1/3;
+    //     grid-row: 2/3;
+    // }
     .item3{
         grid-column:1/3 ;
         grid-row: 3/4;
@@ -173,7 +237,7 @@
 
 
 
-// inicia formato eventos
+// inicia formato eventos------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -199,10 +263,10 @@
 }
 // /* enlaces de cada imagen de galeria de servicios */
 .box1{
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.373);
 }
 .box2{
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.426);
 }
 .box3{
     background-image: url(multimedia/evento3.jpg);
@@ -264,10 +328,7 @@
 /* formato de la galeria de servicios usando disply grids */
 .contacto{
     // height: auto;
-    background-color: #aaa;
-    // display: grid; 
-    // grid-template-columns: 1fr;
-    // grid-row: repeat(1fr, 200px);
+    background-color: #53757336;
     padding: 10px;
     grid-gap: 200px
 }
@@ -284,7 +345,7 @@ form{
     width: 100%;
     // height: 100vh; si lo pongo me saca el conenido de la caja borrar al final 
     background-color: rgb(0, 128, 47);
-    background-image: linear-gradient(rgba(0, 128, 0, 0.7),rgba(255, 255, 0, 0.7)) ,url(../../multimedia/carrusel1.jpg);
+    background-image: linear-gradient(rgba(0, 128, 0, 0.506),rgba(255, 255, 0, 0.458)) ,url(../../multimedia/carrusel1.jpg);
     background-position: center;
     background-size: cover;
     padding: 25px;
@@ -338,13 +399,13 @@ form #enviar{
 
 
 
-// inicia seccion blogs
+// inicia seccion blogs-------------------------------------------------------------------------------------------------
 
 
 // /* formato de la galeria de servicios usando disply grids */
 .blog{
     height: auto;
-    background-color: #f8f8f8;
+    background-color: transparent;
     display: grid; 
     grid-template-columns: 1fr;
     grid-row: repeat(3, 200px);
@@ -364,17 +425,15 @@ form #enviar{
 }
 /* enlaces de cada imagen de galeria de servicios */
 .boxb1{
-    background-image: url(multimedia/evento1.jpg);
+    background-image: url(../multimedia/evento1.jpg);
 }
 .boxb2{
-    background-image: url(multimedia/evento2.jpg);
+    background-image: url(../multimedia/evento2.jpg);
 }
 .boxb3{
-    background-image: url(multimedia/evento3.jpg);
+    background-image: url(../multimedia/evento5.jpg);
 }
-.boxb4{
-    background-image: url(multimedia/evento4.png);
-}
+
 @media screen and (max-width: 40px) {
     .topnav a {
         float: none;
@@ -401,6 +460,22 @@ form #enviar{
     }
 }
 
+/* formato del footer ----------------------------------------------------------------------------------------------*/
+// .footer {
+//     text-align: center;
+//     margin-top: 200px;
+// }
 
+.foo,h5{
+    background-color: rgba(0, 0, 0, 0.634);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
 
+h5{
+    background-color: #53757351;
+    margin-right: 30px;
+}
 
