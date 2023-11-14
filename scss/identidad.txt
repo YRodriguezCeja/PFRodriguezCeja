@@ -5,3 +5,13 @@ barra de navegacion #A35A35
 botones de accion #F5C4AB
 degradado oscuro #42B8AF
 degradado claro #00F5E4
+
+Verde Menta (#6DBD45):Aplicación: Puedes utilizar este color en áreas relacionadas con la salud y el bienestar animal, como fondos de secciones sobre consejos de alimentación saludable o servicios veterinarios.
+
+Azul Cielo (#4AB0D9):Aplicación: Este color puede ser efectivo en encabezados o áreas que destaquen información crucial, como servicios de adiestramiento o citas veterinarias. También puede funcionar bien en botones para acciones importantes.
+
+Gris Claro (#F2F2F2):Aplicación: Utiliza este color como fondo neutro en secciones de texto y contenido informativo. También puede funcionar bien en menús y áreas donde se necesite un fondo más suave.
+
+Amarillo Pálido (#FDE74C):Aplicación: Puedes aplicar este color en llamadas a la acción (CTA) para destacar servicios específicos o promociones. También puede funcionar bien en iconos o elementos gráficos que desees que destaquen.
+
+Rosa Suave (#FFB6C1):Aplicación: Este color puede ser usado de manera sutil en elementos decorativos o en secciones que se centren en aspectos más emocionales, como testimonios de clientes satisfechos o historias de animales rescatados.

@@ -15,7 +15,7 @@
 body {
     // font-family: 'Fira Sans', sans-serif;
     padding: 10px;
-    background-image:  linear-gradient(rgba(0, 128, 0, 0.342),rgba(255, 255, 0, 0.37)),url(../multimedia/evento3.jpg);
+    background-image:  linear-gradient(rgba(0, 128, 0, 0.342),rgba(255, 255, 0, 0.37));
     background-size: cover;
     background-position: center;
 }
@@ -24,9 +24,12 @@ body {
 
 /* formato del header ---------------------------------------------------------------------------------*/
 .header {
-    padding: 30px;
+    padding: 80px;
     text-align: center;
-    background: rgba(102, 113, 111, 0.543);
+    // background: rgba(102, 113, 111, 0.643);
+    background-image: url(../multimedia/perolentes.jpg);
+    background-position:center;
+    background-size:cover;
 }
 
 // formato texto
@@ -35,27 +38,29 @@ body {
     font-size: 70px;
     color: #fafafa;
     text-shadow: 0 0 5px #000;
+    text-align: left;
 }
 
 .header p {
     font-size: 20px;
-    color: #f2f2f2;
-    text-shadow: 0 0 5px #000;
+    color: #080000;
+    text-shadow: 0 0 5pxrgb(253, 253, 253)0;
+    text-align: left;
 }
 
 h2{
     text-align: center;
     background-color: #53757336;
     color: #fff;
-    text-shadow: 0 0 0px #000;
-    padding: 15px;
+    text-shadow: 0 0 5px #000000;
+    padding: 5px;
 }
 
 
 // formato nav bar
 .topnav {
     overflow: hidden;
-    background-color: #a35a3530;
+    background-color: #a35a3540;
 }
 
 /* estilos de los link de la barra de menú */
@@ -64,14 +69,17 @@ h2{
     display: block;
     color: #f2f2f2;
     text-align: center;
+    text-shadow: 0 0 5px black;
+    font-size: 20px;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 /* estilo del fondo de la barra de menus */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgba(240, 138, 13, 0.121);
+    color: rgba(0, 0, 0, 0.523);
+    text-shadow: 0 0 2px black;
 }
 
 
@@ -79,47 +87,63 @@ h2{
 // /* formato de pag inicio usando disply grids */
 .inicio{
     height: auto;
-    background-color: #537573;
+    background-color: transparent;
     display: grid; 
     grid-template-columns: 1fr;
-    grid-row: repeat(8, 200px);
-    padding: 10px;
-    grid-gap: 10px
+    grid-row: repeat(3, auto);
+    grid-gap: 5px
 }
 // /* formato general de cada seccion inicio */
 .caja{
-    border: 5px solid rgba(83, 81, 80, 0.74);
+    border: none;
     background-size: cover;
     background-position: center;
     text-align: center;
     color: #fff;
     text-shadow:0 0 5px #000;
-    font-size: 30px;
-    transition: all 0.9s;
+    font-size: 15px;
 }
-.caja:hover{ 
-    transform: scale(0.9);
+/* fromqatos */
+.caja1 iframe{
+    background-size: cover;
 }
-/* enlaces de cada imagen */
-.caja1{
-    background-image: url(multimedia/evento1.jpg);
+.caja2 iframe{
+    object-position: cover;
+    padding-top: 5px;
 }
-.caja2{
-    background-image: url(multimedia/evento2.jpg);
-}
-.icaja3{
-    background-image: url(multimedia/evento3.jpg);
-}
-.caja4{
-    background-image: url(multimedia/evento4.png);
-}
-.caja5{
-    background-image: url(multimedia/evento5.jpg);
-}
-.caja6{
-    background-image: url(multimedia/evento6.jpg);
+.caja3{
+    background-size: cover;
+    margin: 5px;
+    text-align: left;
+    color: #000;
+    text-shadow: none;
 }
 
+/* Generando resposividad de la pagina de servicios */
+@media only screen and (min-width:480px) {
+    .inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+}
+@media only screen and (min-width:768px) {
+    .caja{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+    .caja1{
+        grid-column:1/3 ;
+        grid-row: 1/2 ;
+    }
+    .caja2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .caja3{
+        grid-column:2/3 ;
+        grid-row: 2/3;
+    }
+}
 
 
 
@@ -320,7 +344,7 @@ h2{
 
 
 
-// inicia pagina contacto
+// inicia pagina contacto-------------------------------------------------------------------------------------------
 
 
 
@@ -328,14 +352,12 @@ h2{
 /* formato de la galeria de servicios usando disply grids */
 .contacto{
     // height: auto;
-    background-color: #53757336;
-    padding: 10px;
+    padding: none;
     grid-gap: 200px
 }
 /* formato general de cada seccion item */
 .boxc{
-    border: 1px solid rgba(83, 81, 80, 0.74);
-    // background-size: cover;
+    background-size: cover;
     background-position: center;
     text-align: center;
     color: #fff;
@@ -345,34 +367,36 @@ form{
     width: 100%;
     // height: 100vh; si lo pongo me saca el conenido de la caja borrar al final 
     background-color: rgb(0, 128, 47);
-    background-image: linear-gradient(rgba(0, 128, 0, 0.506),rgba(255, 255, 0, 0.458)) ,url(../../multimedia/carrusel1.jpg);
+    background-image: linear-gradient(rgba(68, 120, 68, 0.506),rgba(163, 163, 69, 0.458)) ,url(../../multimedia/carrusel1.jpg);
     background-position: center;
     background-size: cover;
     padding: 25px;
 }
 form input{
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
     background-color: transparent;
     border: none;
     border-bottom: 4px solid black;
 }
 form input::placeholder{
-    color: rgb(203, 232, 14);
+    color: rgb(250, 250, 248);
+    text-shadow:0 0 3px #000;
+
 }
 form textarea{
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
     background-color: transparent;
     border: none;
     border-bottom: 4px solid black;
 }
 form textarea::placeholder{
-    color: rgb(203, 232, 14);
+    color: rgb(251, 251, 251);
 }
 form #enviar{
     width: 45%; 
-    background-color: hsla(60, 35%, 37%, 0.519);
+    background-color: #a35a3559;
     font-size: 25px;
     color: #fff;
     border: 2px solid rgba(0, 0, 0, 0.206);
@@ -467,15 +491,16 @@ form #enviar{
 // }
 
 .foo,h5{
-    background-color: rgba(0, 0, 0, 0.634);
-    margin-top: 40px;
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.18);
+    margin-top: 20px;
+    margin-bottom: 5px;
     text-align: center;
     color: #f2f2f2;
 }
 
 h5{
-    background-color: #53757351;
+    background-color: #a35a3540;
     margin-right: 30px;
+    margin-left: 30px;
 }
 
