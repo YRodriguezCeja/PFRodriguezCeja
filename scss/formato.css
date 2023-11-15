@@ -24,6 +24,18 @@ body {
   background-size: cover;
 }
 
+.header {
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+}
+
+#bienvenida:hover {
+  height: 400px;
+  transition: height 2s;
+}
+
 .header h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 70px;
@@ -73,53 +85,47 @@ h2 {
 
 .inicio {
   height: auto;
-  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: repeat(3, auto);
-  grid-gap: 5px;
+  grid-row: repeat(4, 200px);
+  padding: 10px;
+  grid-gap: 10px;
 }
 
 .caja {
-  border: none;
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-  font-size: 15px;
+  font-size: 30px;
 }
 
-/* fromqatos */
-.caja1 iframe {
-  background-size: cover;
-}
-
-.caja2 iframe {
-  -o-object-position: cover;
-     object-position: cover;
-  padding-top: 5px;
-}
-
-.caja3 {
-  background-size: cover;
+.caja3 h4 {
+  background-color: rgba(32, 139, 103, 0.4156862745);
   margin: 5px;
-  text-align: left;
-  color: #000;
-  text-shadow: none;
+  padding: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #0a0a0a;
 }
 
+.caja3 h5 {
+  background-color: transparent;
+  margin: 5px;
+  padding: 5px;
+  color: #060606;
+  font-size: medium;
+}
+
+@media screen and (max-width: 40px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 /* Generando resposividad de la pagina de servicios */
 @media only screen and (min-width: 480px) {
   .inicio {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .caja {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
   }
   .caja1 {
     grid-column: 1/3;
@@ -152,7 +158,6 @@ h2 {
   color: #fff;
   text-shadow: 0 0 5px #000;
   font-size: 30px;
-  transition: all 0.9s;
 }
 
 @media screen and (max-width: 40px) {
@@ -192,42 +197,35 @@ h2 {
 }
 .eventos {
   height: auto;
-  background-color: rgba(248, 248, 248, 0.759);
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: repeat(3, 200px);
+  grid-row: repeat(3, auto);
   padding: 5px;
   grid-gap: 10px;
 }
 
 .box {
-  border: 3px solid rgba(83, 81, 80, 0.74);
+  border: 1px solid rgba(83, 81, 80, 0.74);
   background-size: cover;
   background-position: center;
   text-align: center;
   color: #fff;
   text-shadow: 0 0 5px #000;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .box1 {
-  background-color: rgba(250, 235, 215, 0.373);
+  background-image: url(../multimedia/evento5.jpg);
 }
 
 .box2 {
-  background-color: rgba(250, 235, 215, 0.426);
+  background-image: url(../multimedia/evento3.jpg);
 }
 
 .box3 {
-  background-image: url(multimedia/evento3.jpg);
+  background-image: url(../multimedia/evento8.jpg);
 }
 
-@media screen and (max-width: 40px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
 /* Generando resposividad de la pagina de servicios */
 @media only screen and (min-width: 480px) {
   .eventos {
@@ -245,24 +243,6 @@ h2 {
   .box3 {
     grid-column: 1/3;
     grid-row: 2/3;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .eventos {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-  }
-  .box1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .box2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .box3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
   }
 }
 /* formato de la galeria de servicios usando disply grids */
@@ -349,37 +329,35 @@ form #enviar {
   }
 }
 .blog {
+  padding: 10px;
   height: auto;
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: repeat(3, 200px);
-  padding: 5px;
+  grid-row: repeat(3, auto);
   grid-gap: 5px;
 }
 
-.boxb {
-  border: 3px solid rgba(90, 89, 89, 0.74);
+.boxb h2 {
+  background-color: rgba(0, 0, 0, 0.575);
   background-size: cover;
   background-position: center;
   text-align: center;
   color: #fff;
   text-shadow: 0 0 5px #000;
-  font-size: 30px;
   transition: all 0.9s;
 }
 
-/* enlaces de cada imagen de galeria de servicios */
-.boxb1 {
-  background-image: url(../multimedia/evento1.jpg);
+.boxb p {
+  background-position: center;
+  text-align: left;
+  color: #000000;
+  text-shadow: 0 0 3px rgba(254, 253, 253, 0.4196078431);
+  transition: all 0.9s;
 }
 
-.boxb2 {
-  background-image: url(../multimedia/evento2.jpg);
-}
-
-.boxb3 {
-  background-image: url(../multimedia/evento5.jpg);
+a {
+  background-position: center;
 }
 
 @media screen and (max-width: 40px) {
@@ -389,28 +367,29 @@ form #enviar {
   }
 }
 /* Generando resposividad de la pagina de servicios */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
   .blog {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, auto);
   }
   .boxb1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .boxb2 {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+  .boxb2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
   .boxb3 {
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 2/3;
   }
 }
 /* formato del footer ----------------------------------------------------------------------------------------------*/
 .foo, h5 {
   background-color: rgba(0, 0, 0, 0.18);
-  margin-top: 20px;
+  text-shadow: 0 0 3px #000;
+  margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
   color: #f2f2f2;
