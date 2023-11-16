@@ -36,14 +36,26 @@ body {
   transition: height 2s;
 }
 
-.header h1 {
+h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 70px;
   color: #fafafa;
   text-shadow: 0 0 5px #000;
   text-align: left;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header p {
   font-size: 20px;
   color: #080000;
@@ -386,7 +398,37 @@ a {
   }
 }
 /* formato del footer ----------------------------------------------------------------------------------------------*/
+#logo {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 100px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes efecto {
+  0% {
+    border-radius: 0%;
+    opacity: 0;
+  }
+  50% {
+    border-radius: 30px;
+    transform: translatex(200px);
+    background-color: rgb(0, 2, 2);
+    opacity: 1;
+  }
+  100% {
+    border-radius: 75px;
+    transform: translate(50px, 15px) rotate(360deg) scale(1.5);
+  }
+}
 .foo, h5 {
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.18);
   text-shadow: 0 0 3px #000;
   margin-top: 10px;
