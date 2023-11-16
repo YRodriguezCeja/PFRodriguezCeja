@@ -1,0 +1,68 @@
+
+
+
+// /* formato de pag inicio usando disply grids */
+.inicio {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(4, 200px);
+    padding: 10px;
+    grid-gap: 10px
+}
+
+// /* formato general de cada seccion inicio */
+.caja {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.caja3 h4 {
+    background-color: #208b676a;
+    margin: 5px;
+    padding: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #0a0a0a;
+}
+
+.caja3 h5 {
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+    color: #060606;
+    font-size: medium;
+}
+
+@media screen and (max-width: 40px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Generando resposividad de la pagina de servicios */
+@media only screen and (min-width:480px) {
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .caja1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .caja2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .caja3 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+

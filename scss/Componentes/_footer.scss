@@ -1,0 +1,45 @@
+
+/* formato del footer ----------------------------------------------------------------------------------------------*/
+#logo{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 100px;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes efecto{
+    0%{
+        border-radius: 0%;
+        opacity: 0;
+    }
+    50%{
+        border-radius: 30px;
+        transform: translatex(200px);
+        opacity: 1;
+    }
+    100%{
+        border-radius: 75px;
+        transform: translate(50px,15px) rotate(360deg) scale(1.5);
+    }
+}
+.foo,h5 {
+    padding: 5px;
+    background-color: rgba(0, 6, 4, 0.905);
+    text-shadow: 0 0 3px #000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+h5 {
+    background-color:transparent;
+    border-radius: 3px;
+    margin-right: 30px;
+    margin-left: 30px;
+}

@@ -7,14 +7,6 @@
   font-family: "Lora", serif;
 }
 
-/* formato general del texto  y fuentes*/
-body {
-  padding: 10px;
-  background-image: linear-gradient(rgba(0, 128, 0, 0.342), rgba(255, 255, 0, 0.37));
-  background-size: cover;
-  background-position: center;
-}
-
 /* formato del header ---------------------------------------------------------------------------------*/
 .header {
   padding: 80px;
@@ -33,7 +25,22 @@ body {
 
 #bienvenida:hover {
   height: 400px;
-  transition: height 2s;
+  transition: height 3s;
+}
+
+.header p {
+  font-size: 20px;
+  color: #080000;
+  text-shadow: 0 0 5pxrgb 253, 253, 253 0;
+  text-align: left;
+}
+
+/* formato general del texto  y fuentes*/
+body {
+  padding: 10px;
+  background-image: linear-gradient(rgba(0, 128, 0, 0.342), rgba(255, 255, 0, 0.37));
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -56,19 +63,58 @@ h1 {
     opacity: 1;
   }
 }
-.header p {
-  font-size: 20px;
-  color: #080000;
-  text-shadow: 0 0 5pxrgb 253, 253, 253 0;
-  text-align: left;
-}
-
 h2 {
   text-align: center;
   background-color: rgba(83, 117, 115, 0.2117647059);
   color: #fff;
   text-shadow: 0 0 5px #000000;
   padding: 5px;
+}
+
+/* formato del footer ----------------------------------------------------------------------------------------------*/
+#logo {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 100px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes efecto {
+  0% {
+    border-radius: 0%;
+    opacity: 0;
+  }
+  50% {
+    border-radius: 30px;
+    transform: translatex(200px);
+    opacity: 1;
+  }
+  100% {
+    border-radius: 75px;
+    transform: translate(50px, 15px) rotate(360deg) scale(1.5);
+  }
+}
+.foo, h5 {
+  padding: 5px;
+  background-color: rgba(0, 6, 4, 0.905);
+  text-shadow: 0 0 3px #000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+h5 {
+  background-color: transparent;
+  border-radius: 3px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .topnav {
@@ -95,6 +141,196 @@ h2 {
   text-shadow: 0 0 2px black;
 }
 
+.blog {
+  padding: 10px;
+  height: auto;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.boxb h2 {
+  background-color: rgba(0, 0, 0, 0.575);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  transition: all 0.9s;
+}
+
+.boxb p {
+  background-position: center;
+  text-align: left;
+  color: #000000;
+  text-shadow: 0 0 3px rgba(254, 253, 253, 0.4196078431);
+  transition: all 0.9s;
+}
+
+a {
+  background-position: center;
+}
+
+@media screen and (max-width: 40px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Generando resposividad de la pagina de servicios */
+@media only screen and (min-width: 768px) {
+  .blog {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  .boxb1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .boxb2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .boxb3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+/* formato de la galeria de servicios usando disply grids */
+.contacto {
+  padding: none;
+  grid-gap: 200px;
+}
+
+/* formato general de cada seccion item */
+.boxc {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+form {
+  width: 100%;
+  background-color: rgb(0, 128, 47);
+  background-image: linear-gradient(rgba(68, 120, 68, 0.506), rgba(163, 163, 69, 0.458)), url(../../multimedia/carrusel1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+}
+
+form input {
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid black;
+}
+
+form input::-moz-placeholder {
+  color: rgb(250, 250, 248);
+  text-shadow: 0 0 3px #000;
+}
+
+form input::placeholder {
+  color: rgb(250, 250, 248);
+  text-shadow: 0 0 3px #000;
+}
+
+form textarea {
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid black;
+}
+
+form textarea::-moz-placeholder {
+  color: rgb(251, 251, 251);
+}
+
+form textarea::placeholder {
+  color: rgb(251, 251, 251);
+}
+
+form #enviar {
+  width: 45%;
+  background-color: rgba(163, 90, 53, 0.3490196078);
+  font-size: 25px;
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.206);
+  padding: 10px;
+}
+
+@media screen and (max-width: 40px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 200px;
+  }
+  .boxc1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.eventos {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: repeat(3, auto);
+  padding: 5px;
+  grid-gap: 10px;
+}
+
+.box {
+  border: 1px solid rgba(83, 81, 80, 0.74);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+}
+
+.box1 {
+  background-image: url(../multimedia/evento5.jpg);
+}
+
+.box2 {
+  background-image: url(../multimedia/evento3.jpg);
+}
+
+.box3 {
+  background-image: url(../multimedia/evento8.jpg);
+}
+
+/* Generando resposividad de la pagina de servicios */
+@media only screen and (min-width: 480px) {
+  .eventos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  .box1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .box2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .box3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
 .inicio {
   height: auto;
   display: grid;
@@ -206,239 +442,4 @@ h2 {
     grid-column: 1/4;
     grid-row: 4/5;
   }
-}
-.eventos {
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row: repeat(3, auto);
-  padding: 5px;
-  grid-gap: 10px;
-}
-
-.box {
-  border: 1px solid rgba(83, 81, 80, 0.74);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-  font-size: 20px;
-}
-
-.box1 {
-  background-image: url(../multimedia/evento5.jpg);
-}
-
-.box2 {
-  background-image: url(../multimedia/evento3.jpg);
-}
-
-.box3 {
-  background-image: url(../multimedia/evento8.jpg);
-}
-
-/* Generando resposividad de la pagina de servicios */
-@media only screen and (min-width: 480px) {
-  .eventos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-  }
-  .box1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .box2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .box3 {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-}
-/* formato de la galeria de servicios usando disply grids */
-.contacto {
-  padding: none;
-  grid-gap: 200px;
-}
-
-/* formato general de cada seccion item */
-.boxc {
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 0 3px #000;
-}
-
-form {
-  width: 100%;
-  background-color: rgb(0, 128, 47);
-  background-image: linear-gradient(rgba(68, 120, 68, 0.506), rgba(163, 163, 69, 0.458)), url(../../multimedia/carrusel1.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 25px;
-}
-
-form input {
-  width: 100%;
-  font-size: 25px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 4px solid black;
-}
-
-form input::-moz-placeholder {
-  color: rgb(250, 250, 248);
-  text-shadow: 0 0 3px #000;
-}
-
-form input::placeholder {
-  color: rgb(250, 250, 248);
-  text-shadow: 0 0 3px #000;
-}
-
-form textarea {
-  width: 100%;
-  font-size: 25px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 4px solid black;
-}
-
-form textarea::-moz-placeholder {
-  color: rgb(251, 251, 251);
-}
-
-form textarea::placeholder {
-  color: rgb(251, 251, 251);
-}
-
-form #enviar {
-  width: 45%;
-  background-color: rgba(163, 90, 53, 0.3490196078);
-  font-size: 25px;
-  color: #fff;
-  border: 2px solid rgba(0, 0, 0, 0.206);
-  padding: 10px;
-}
-
-@media screen and (max-width: 40px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 320px) {
-  .contacto {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 200px;
-  }
-  .boxc1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-}
-.blog {
-  padding: 10px;
-  height: auto;
-  background-color: transparent;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row: repeat(3, auto);
-  grid-gap: 5px;
-}
-
-.boxb h2 {
-  background-color: rgba(0, 0, 0, 0.575);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-  transition: all 0.9s;
-}
-
-.boxb p {
-  background-position: center;
-  text-align: left;
-  color: #000000;
-  text-shadow: 0 0 3px rgba(254, 253, 253, 0.4196078431);
-  transition: all 0.9s;
-}
-
-a {
-  background-position: center;
-}
-
-@media screen and (max-width: 40px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-/* Generando resposividad de la pagina de servicios */
-@media only screen and (min-width: 768px) {
-  .blog {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-  }
-  .boxb1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .boxb2 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .boxb3 {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-}
-/* formato del footer ----------------------------------------------------------------------------------------------*/
-#logo {
-  margin: 10px;
-  padding: 10px;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  text-align: center;
-  line-height: 100px;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-}
-
-@keyframes efecto {
-  0% {
-    border-radius: 0%;
-    opacity: 0;
-  }
-  50% {
-    border-radius: 30px;
-    transform: translatex(200px);
-    background-color: rgb(0, 2, 2);
-    opacity: 1;
-  }
-  100% {
-    border-radius: 75px;
-    transform: translate(50px, 15px) rotate(360deg) scale(1.5);
-  }
-}
-.foo, h5 {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.18);
-  text-shadow: 0 0 3px #000;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-  color: #f2f2f2;
-}
-
-h5 {
-  background-color: rgba(163, 90, 53, 0.2509803922);
-  margin-right: 30px;
-  margin-left: 30px;
 }/*# sourceMappingURL=formato.css.map */
