@@ -71,7 +71,6 @@ h2 {
   padding: 5px;
 }
 
-/* formato del footer ----------------------------------------------------------------------------------------------*/
 #logo {
   margin: 10px;
   padding: 10px;
@@ -92,7 +91,7 @@ h2 {
   }
   50% {
     border-radius: 30px;
-    transform: translatex(200px);
+    transform: translatey(30px);
     opacity: 1;
   }
   100% {
@@ -338,12 +337,15 @@ form #enviar {
   grid-row: repeat(4, 200px);
   padding: 10px;
   grid-gap: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .caja {
-  background-size: cover;
   background-position: center;
   text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
   font-size: 30px;
 }
 
@@ -356,6 +358,7 @@ form #enviar {
 }
 
 .caja3 h5 {
+  text-align: center;
   background-color: transparent;
   margin: 5px;
   padding: 5px;

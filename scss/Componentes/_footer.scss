@@ -1,5 +1,4 @@
-
-/* formato del footer ----------------------------------------------------------------------------------------------*/
+// inicia formato se seccion footer
 #logo{
     margin: 10px;
     padding: 10px;
@@ -19,7 +18,7 @@
     }
     50%{
         border-radius: 30px;
-        transform: translatex(200px);
+        transform: translatey(30px);
         opacity: 1;
     }
     100%{
@@ -36,7 +35,6 @@
     text-align: center;
     color: #f2f2f2;
 }
-
 h5 {
     background-color:transparent;
     border-radius: 3px;

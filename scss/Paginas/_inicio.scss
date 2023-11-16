@@ -1,24 +1,21 @@
 
-
-
-// /* formato de pag inicio usando disply grids */
+// /* formato de pag inicio 
 .inicio {
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-row: repeat(4, 200px);
     padding: 10px;
-    grid-gap: 10px
+    grid-gap: 10px;
+    object-fit: cover;
 }
-
-// /* formato general de cada seccion inicio */
 .caja {
-    background-size: cover;
     background-position: center;
     text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
     font-size: 30px;
 }
-
 .caja3 h4 {
     background-color: #208b676a;
     margin: 5px;
@@ -28,6 +25,7 @@
 }
 
 .caja3 h5 {
+    text-align: center;
     background-color: transparent;
     margin: 5px;
     padding: 5px;
