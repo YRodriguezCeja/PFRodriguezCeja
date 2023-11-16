@@ -1,15 +1,13 @@
-/* formato del header ---------------------------------------------------------------------------------*/
+/* formato del header --------------*/
 .header {
     padding: 80px;
     text-align: center;
-    // background: rgba(102, 113, 111, 0.643);
     background-image: url(../multimedia/perolentes.jpg);
     background-position: center;
     background-size: cover;
 }
 .header{
     height: 200px;
-    // width: 400px;
     text-align: center;
     font-size: 30px;
     padding: 30px;
@@ -18,10 +16,7 @@
     height: 400px;
     transition: height 3s;
 }
-// #bienvenida{
-//     height: 400px;
-//     transition: height 2s;
-// }
+
 .header p {
     font-size: 20px;
     color: #080000;

@@ -1,7 +1,5 @@
-
-
-
 /* formato general del texto  y fuentes*/
+
 body {
     // font-family: 'Fira Sans', sans-serif;
     padding: 10px;
@@ -23,6 +21,7 @@ h1 {
     animation-iteration-count: infinite;
 }
 
+// animaciones
 @keyframes aparecer{
     from{
         opacity: 0;

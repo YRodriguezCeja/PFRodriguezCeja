@@ -7,7 +7,7 @@
   font-family: "Lora", serif;
 }
 
-/* formato del header ---------------------------------------------------------------------------------*/
+/* formato del header --------------*/
 .header {
   padding: 80px;
   text-align: center;
@@ -178,7 +178,7 @@ a {
     width: 100%;
   }
 }
-/* Generando resposividad de la pagina de servicios */
+/* Generando resposividad */
 @media only screen and (min-width: 768px) {
   .blog {
     grid-template-columns: 1fr 1fr;
@@ -197,7 +197,7 @@ a {
     grid-row: 2/3;
   }
 }
-/* formato de la galeria de servicios usando disply grids */
+/* formato del contacto */
 .contacto {
   padding: none;
   grid-gap: 200px;
@@ -264,6 +264,7 @@ form #enviar {
   padding: 10px;
 }
 
+/* Generando resposividad  */
 @media screen and (max-width: 40px) {
   .topnav a {
     float: none;
@@ -311,7 +312,7 @@ form #enviar {
   background-image: url(../multimedia/evento8.jpg);
 }
 
-/* Generando resposividad de la pagina de servicios */
+/* Generando resposividad  */
 @media only screen and (min-width: 480px) {
   .eventos {
     grid-template-columns: 1fr 1fr;
@@ -366,13 +367,13 @@ form #enviar {
   font-size: medium;
 }
 
+/* Generando resposividad  */
 @media screen and (max-width: 40px) {
   .topnav a {
     float: none;
     width: 100%;
   }
 }
-/* Generando resposividad de la pagina de servicios */
 @media only screen and (min-width: 480px) {
   .inicio {
     grid-template-columns: 1fr 1fr;
@@ -411,13 +412,13 @@ form #enviar {
   font-size: 30px;
 }
 
+/* Generando resposividad  */
 @media screen and (max-width: 40px) {
   .topnav a {
     float: none;
     width: 100%;
   }
 }
-/* Generando resposividad de la pagina de servicios */
 @media only screen and (min-width: 480px) {
   .galeria {
     grid-template-columns: 1fr;
