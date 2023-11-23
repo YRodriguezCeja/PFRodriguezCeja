@@ -1,16 +1,14 @@
 
 // formato nav bar
-.topnav {
+nav {
     overflow: hidden;
     background-color: #a35a3540;
 }
 
 /* estilos de los link de la barra de menú */
-.topnav a {
-    float: left;
-    display: block;
+nav a {
+    float:right;
     color: #f2f2f2;
-    text-align: center;
     text-shadow: 0 0 5px black;
     font-size: 20px;
     padding: 14px 16px;
@@ -18,7 +16,7 @@
 }
 
 /* estilo del fondo de la barra de menus */
-.topnav a:hover {
+nav a:hover {
     background-color: rgba(240, 138, 13, 0.121);
     color: rgba(0, 0, 0, 0.523);
     text-shadow: 0 0 2px black;

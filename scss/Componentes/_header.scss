@@ -1,23 +1,43 @@
 /* formato del header --------------*/
-.header {
-    padding: 80px;
-    text-align: center;
-    background-image: url(../multimedia/perolentes.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.header{
-    height: 200px;
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
-}
-#bienvenida:hover{
-    height: 400px;
-    transition: height 3s;
+h1{
+    padding-top: 50px;
+    margin-left: 100px;
 }
 
-.header p {
+// header{
+//     background-image: url(../../multimedia/perolentes.jpg);
+//     background-size:contain;
+//     background-position:left;
+//     height: 100px;
+//     text-align: center;
+//     font-size: 30px;
+//     transition: all;
+// }
+
+.transition{
+    height: 200px;
+    width:auto;
+    background-image: url(../../multimedia/perolentes.jpg);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-family: sans-serif;
+    border: 1px solid #000;
+}
+
+#t1{
+    transition: height 2.7s;
+}
+
+#t1:hover{
+    height: 400px;
+    // transition: height 2.7s;
+}
+
+header p {
+    margin-left: 60px;
     font-size: 20px;
     color: #080000;
     text-shadow: 0 0 5pxrgb(253, 253, 253)0;

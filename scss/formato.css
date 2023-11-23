@@ -8,27 +8,34 @@
 }
 
 /* formato del header --------------*/
-.header {
-  padding: 80px;
-  text-align: center;
-  background-image: url(../multimedia/perolentes.jpg);
-  background-position: center;
-  background-size: cover;
+h1 {
+  padding-top: 50px;
+  margin-left: 100px;
 }
 
-.header {
+.transition {
   height: 200px;
+  width: auto;
+  background-image: url(../../multimedia/perolentes.jpg);
+  background-position: top;
+  background-size: cover;
   text-align: center;
   font-size: 30px;
-  padding: 30px;
+  padding: 10px;
+  font-family: sans-serif;
+  border: 1px solid #000;
 }
 
-#bienvenida:hover {
+#t1 {
+  transition: height 2.7s;
+}
+
+#t1:hover {
   height: 400px;
-  transition: height 3s;
 }
 
-.header p {
+header p {
+  margin-left: 60px;
   font-size: 20px;
   color: #080000;
   text-shadow: 0 0 5pxrgb 253, 253, 253 0;
@@ -116,17 +123,15 @@ h5 {
   margin-left: 30px;
 }
 
-.topnav {
+nav {
   overflow: hidden;
   background-color: rgba(163, 90, 53, 0.2509803922);
 }
 
 /* estilos de los link de la barra de menú */
-.topnav a {
-  float: left;
-  display: block;
+nav a {
+  float: right;
   color: #f2f2f2;
-  text-align: center;
   text-shadow: 0 0 5px black;
   font-size: 20px;
   padding: 14px 16px;
@@ -134,7 +139,7 @@ h5 {
 }
 
 /* estilo del fondo de la barra de menus */
-.topnav a:hover {
+nav a:hover {
   background-color: rgba(240, 138, 13, 0.121);
   color: rgba(0, 0, 0, 0.523);
   text-shadow: 0 0 2px black;
