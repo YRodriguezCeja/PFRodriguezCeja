@@ -4,43 +4,51 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row: repeat(4, 200px);
-    padding: 10px;
     grid-gap: 10px;
     object-fit: cover;
 }
 .caja {
-    background-position: center;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 0 5px #000;
     font-size: 30px;
 }
+
+.caja2{
+    object-fit: cover;
+    object-position: center;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+// ajustes apartado nosotros somos...
 .caja3 h4 {
     background-color: #208b676a;
     margin: 5px;
-    padding: 5px;
+    padding-left: 15px;
     color: #ffffff;
     text-shadow: 0 0 5px #0a0a0a;
+    text-align:left;
 }
 
-.caja3 h5 {
-    text-align: center;
-    background-color: transparent;
+// ajustes al parrafo nosotros somos... 
+.caja3 p {
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.285);
     margin: 5px;
-    padding: 5px;
-    color: #060606;
-    font-size: medium;
+    padding: 18px;
+    color: #070000;
+    font-size: 20px;
+    text-align:left;
 }
 
 /* Generando resposividad  */
-@media screen and (max-width: 40px) {
-    .topnav a {
+@media screen and (max-width: 320px) {
+    nav a {
         float: none;
         width: 100%;
     }
 }
-
-@media only screen and (min-width:480px) {
+@media only screen and (min-width:780px) {
     .inicio {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, auto);
@@ -58,5 +66,3 @@
         grid-row: 2/3;
     }
 }
-
-

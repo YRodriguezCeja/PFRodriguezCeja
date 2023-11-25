@@ -10,9 +10,15 @@
     grid-gap: 10px
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 // /* formato general de cada seccion box */
 .box {
-    border: 1px solid rgba(83, 81, 80, 0.74);
+    width: 100%;
+    margin-bottom: 20px;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -21,22 +27,52 @@
     font-size: 20px;
 }
 
-// /* enlaces de cada imagen  */
-.box1 {
-    background-image: url(../multimedia/evento5.jpg);
+h3{
+    background-color: rgba(0, 128, 0, 0.258);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
+// /* enlaces de cada imagen  */
+#adopciones{
+    object-fit:scale-down;
+}
+
 .box2 {
-    background-image: url(../multimedia/evento3.jpg);
+    background-color: rgba(128, 128, 128, 0.194);
+    text-align: left;
+    border: none;
+}
+.box2 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 17px;
+    color: #000;
+    text-shadow: none;
 }
 .box3 {
-    background-image: url(../multimedia/evento8.jpg);
+    background-image: url(../../multimedia/mujerperro.jpg);
+    border: none;
+}
+.box3 p{
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.371);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 17px;
+    color: #fcfcfc;
+    text-shadow: 0 0 5px #000;
 }
 
 /* Generando resposividad  */
-@media only screen and (min-width:480px) {
+@media only screen and (min-width:780px) {
     .eventos {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(2,auto);
     }
     .box1 {
         grid-column: 1/2;
@@ -51,3 +87,4 @@
         grid-row: 2/3;
     }
 }
+

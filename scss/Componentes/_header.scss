@@ -1,21 +1,11 @@
 /* formato del header --------------*/
 h1{
-    padding-top: 50px;
-    margin-left: 100px;
+    padding-top: 10px;
+    margin-left: 50px;
 }
 
-// header{
-//     background-image: url(../../multimedia/perolentes.jpg);
-//     background-size:contain;
-//     background-position:left;
-//     height: 100px;
-//     text-align: center;
-//     font-size: 30px;
-//     transition: all;
-// }
-
 .transition{
-    height: 200px;
+    height: 300px;
     width:auto;
     background-image: url(../../multimedia/perolentes.jpg);
     background-position: top;
@@ -24,7 +14,6 @@ h1{
     font-size: 30px;
     padding: 10px;
     font-family: sans-serif;
-    border: 1px solid #000;
 }
 
 #t1{

@@ -1,6 +1,31 @@
 // inicia formato se seccion footer
+footer{
+    margin-top: 5px;
+}
+
+.foo,h5 {
+    padding: 20px;
+    background-color: rgba(0, 6, 4, 0.905);
+    text-shadow: 0 0 3px #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+h5 {
+    background-color:transparent;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.foo a{
+    letter-spacing: 15px;
+    font-size: 30px;
+}
+
 #logo{
-    margin: 30px;
+    margin: 10px;
     padding: 30px;
     width: 150px;
     height: 150px;
@@ -18,31 +43,11 @@
     }
     50%{
         border-radius: 30px;
-        transform: translatey(30px);
+        transform: translatey(-30px);
         opacity: 1;
     }
     100%{
         border-radius: 75px;
-        transform: translate(50px,15px) rotate(360deg) scale(1.5);
+        transform: translate(-15px,-10px) rotate(360deg) scale(2);
     }
-}
-.foo,h5 {
-    padding: 5px;
-    background-color: rgba(0, 6, 4, 0.905);
-    text-shadow: 0 0 3px #000;
-    margin-top: 60px;
-    margin-bottom: 5px;
-    text-align: center;
-    color: #f2f2f2;
-}
-
-h5 {
-    background-color:transparent;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-.foo a{
-    letter-spacing: 15px;
-    font-size: 30px;
 }

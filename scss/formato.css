@@ -9,12 +9,12 @@
 
 /* formato del header --------------*/
 h1 {
-  padding-top: 50px;
-  margin-left: 100px;
+  padding-top: 10px;
+  margin-left: 50px;
 }
 
 .transition {
-  height: 200px;
+  height: 300px;
   width: auto;
   background-image: url(../../multimedia/perolentes.jpg);
   background-position: top;
@@ -23,7 +23,6 @@ h1 {
   font-size: 30px;
   padding: 10px;
   font-family: sans-serif;
-  border: 1px solid #000;
 }
 
 #t1 {
@@ -78,8 +77,33 @@ h2 {
   padding: 5px;
 }
 
+footer {
+  margin-top: 5px;
+}
+
+.foo, h5 {
+  padding: 20px;
+  background-color: rgba(0, 6, 4, 0.905);
+  text-shadow: 0 0 3px #000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+h5 {
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.foo a {
+  letter-spacing: 15px;
+  font-size: 30px;
+}
+
 #logo {
-  margin: 30px;
+  margin: 10px;
   padding: 30px;
   width: 150px;
   height: 150px;
@@ -98,35 +122,14 @@ h2 {
   }
   50% {
     border-radius: 30px;
-    transform: translatey(30px);
+    transform: translatey(-30px);
     opacity: 1;
   }
   100% {
     border-radius: 75px;
-    transform: translate(50px, 15px) rotate(360deg) scale(1.5);
+    transform: translate(-15px, -10px) rotate(360deg) scale(2);
   }
 }
-.foo, h5 {
-  padding: 5px;
-  background-color: rgba(0, 6, 4, 0.905);
-  text-shadow: 0 0 3px #000;
-  margin-top: 60px;
-  margin-bottom: 5px;
-  text-align: center;
-  color: #f2f2f2;
-}
-
-h5 {
-  background-color: transparent;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.foo a {
-  letter-spacing: 15px;
-  font-size: 30px;
-}
-
 nav {
   overflow: hidden;
   background-color: rgba(163, 90, 53, 0.2509803922);
@@ -152,7 +155,7 @@ nav a:hover {
 .blog {
   padding: 10px;
   height: auto;
-  background-color: transparent;
+  background-color: rgba(128, 128, 128, 0.169);
   display: grid;
   grid-template-columns: 1fr;
   grid-row: repeat(3, auto);
@@ -167,6 +170,11 @@ nav a:hover {
   color: #fff;
   text-shadow: 0 0 5px #000;
   transition: all 0.9s;
+}
+
+.boxb h5 {
+  text-align: left;
+  margin-left: 50px;
 }
 
 .boxb p {
@@ -224,7 +232,7 @@ a {
 form {
   width: 100%;
   background-color: rgb(0, 128, 47);
-  background-image: linear-gradient(rgba(68, 120, 68, 0.506), rgba(163, 163, 69, 0.458)), url(../../multimedia/carrusel1.jpg);
+  background-image: linear-gradient(rgba(68, 120, 68, 0.506), rgba(163, 163, 69, 0.458)), url(../../multimedia/perroenlago.jpg);
   background-position: center;
   background-size: cover;
   padding: 25px;
@@ -299,8 +307,14 @@ form #enviar {
   grid-gap: 10px;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .box {
-  border: 1px solid rgba(83, 81, 80, 0.74);
+  width: 100%;
+  margin-bottom: 20px;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -309,20 +323,53 @@ form #enviar {
   font-size: 20px;
 }
 
-.box1 {
-  background-image: url(../multimedia/evento5.jpg);
+h3 {
+  background-color: rgba(0, 128, 0, 0.258);
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#adopciones {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .box2 {
-  background-image: url(../multimedia/evento3.jpg);
+  background-color: rgba(128, 128, 128, 0.194);
+  text-align: left;
+  border: none;
+}
+
+.box2 p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 17px;
+  color: #000;
+  text-shadow: none;
 }
 
 .box3 {
-  background-image: url(../multimedia/evento8.jpg);
+  background-image: url(../../multimedia/mujerperro.jpg);
+  border: none;
+}
+
+.box3 p {
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0.371);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 17px;
+  color: #fcfcfc;
+  text-shadow: 0 0 5px #000;
 }
 
 /* Generando resposividad  */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 780px) {
   .eventos {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
@@ -345,45 +392,54 @@ form #enviar {
   display: grid;
   grid-template-columns: 1fr;
   grid-row: repeat(4, 200px);
-  padding: 10px;
   grid-gap: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .caja {
-  background-position: center;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
   font-size: 30px;
+}
+
+.caja2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
 }
 
 .caja3 h4 {
   background-color: rgba(32, 139, 103, 0.4156862745);
   margin: 5px;
-  padding: 5px;
+  padding-left: 15px;
   color: #ffffff;
   text-shadow: 0 0 5px #0a0a0a;
+  text-align: left;
 }
 
-.caja3 h5 {
-  text-align: center;
-  background-color: transparent;
+.caja3 p {
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0.285);
   margin: 5px;
-  padding: 5px;
-  color: #060606;
-  font-size: medium;
+  padding: 18px;
+  color: #070000;
+  font-size: 20px;
+  text-align: left;
 }
 
 /* Generando resposividad  */
-@media screen and (max-width: 40px) {
-  .topnav a {
+@media screen and (max-width: 320px) {
+  nav a {
     float: none;
     width: 100%;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 780px) {
   .inicio {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);

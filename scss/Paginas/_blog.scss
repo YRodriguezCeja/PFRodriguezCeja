@@ -4,7 +4,7 @@
 .blog {
     padding: 10px;
     height: auto;
-    background-color: transparent;
+    background-color: rgba(128, 128, 128, 0.169);
     display: grid;
     grid-template-columns: 1fr;
     grid-row: repeat(3, auto);
@@ -22,12 +22,18 @@
     transition: all 0.9s;
 }
 
+.boxb h5{
+    text-align: left;
+    margin-left: 50px;
+}
+
 .boxb p {
     background-position: center;
     text-align: left;
     color: #000000;
     text-shadow: 0 0 3px #fefdfd6b;
     transition: all 0.9s;
+    
 }
 
 a {
