@@ -36,7 +36,7 @@ h1 {
 header p {
   margin-left: 40px;
   font-size: 20px;
-  color: #080000;
+  color: #f8f2f2;
   text-shadow: 0 0 5pxrgb 253, 253, 253 0;
   text-align: left;
 }
@@ -232,7 +232,7 @@ a {
 form {
   width: 100%;
   background-color: rgb(0, 128, 47);
-  background-image: linear-gradient(rgba(68, 120, 68, 0.506), rgba(163, 163, 69, 0.458)), url(../../multimedia/mujeradieamarillo.jpg);
+  background-image: linear-gradient(rgba(68, 120, 68, 0.507), rgba(163, 163, 69, 0.574)), url(../../multimedia/mujeradieamarillo.jpg);
   background-position: center;
   background-size: cover;
   padding: 25px;
