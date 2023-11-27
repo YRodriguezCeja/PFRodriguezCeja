@@ -16,7 +16,7 @@ h1 {
 .transition {
   height: 200px;
   width: auto;
-  background-image: url(../../multimedia/adiesbasicoobej.jpg);
+  background-image: url(../../multimedia/header.jpg);
   background-position: top;
   background-size: cover;
   text-align: center;
@@ -34,7 +34,7 @@ h1 {
 }
 
 header p {
-  margin-left: 60px;
+  margin-left: 40px;
   font-size: 20px;
   color: #080000;
   text-shadow: 0 0 5pxrgb 253, 253, 253 0;
