@@ -12,8 +12,8 @@
 
 // /* formato general de contendor */
 .item {
-    border: 3px solid rgba(90, 89, 89, 0.74);
-    background-color: #53757381;
+    // border: 1px solid rgba(90, 89, 89, 0.74);
+    background-color: #53757303;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -22,6 +22,31 @@
     font-size: 30px;
 }
 
+#estetica{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+#hotel{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item4{
+    background-color: rgba(214, 165, 32, 0.543);
+}
+.item4 p{
+    padding-left: 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    text-shadow: none;
+}
 /* Generando resposividad  */
 @media screen and (max-width: 40px) {
     .topnav a {
@@ -52,10 +77,10 @@
     }
     .item3 {
         grid-column: 3/4;
-        grid-row: 2/3;
+        grid-row: 2/5;
     }
     .item4 {
-        grid-column: 1/4;
-        grid-row: 4/5;
+        grid-column: 1/3;
+        grid-row: 3/5;
     }
 }

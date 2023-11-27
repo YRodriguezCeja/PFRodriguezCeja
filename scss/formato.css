@@ -467,14 +467,44 @@ iframe {
 }
 
 .item {
-  border: 3px solid rgba(90, 89, 89, 0.74);
-  background-color: rgba(83, 117, 115, 0.5058823529);
+  background-color: rgba(83, 117, 115, 0.0117647059);
   background-size: cover;
   background-position: center;
   text-align: center;
   color: #fff;
   text-shadow: 0 0 5px #000;
   font-size: 30px;
+}
+
+#estetica {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#hotel {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.item4 {
+  background-color: rgba(214, 165, 32, 0.543);
+}
+
+.item4 p {
+  padding-left: 40px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  text-shadow: none;
 }
 
 /* Generando resposividad  */
@@ -505,10 +535,10 @@ iframe {
   }
   .item3 {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 2/5;
   }
   .item4 {
-    grid-column: 1/4;
-    grid-row: 4/5;
+    grid-column: 1/3;
+    grid-row: 3/5;
   }
 }/*# sourceMappingURL=formato.css.map */
